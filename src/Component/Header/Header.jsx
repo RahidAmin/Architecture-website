@@ -14,19 +14,19 @@ const Header = () => {
     const links =
         <>
             <li onClick={() => setIsOpen(false)}>
-                <Link to="/">Home</Link>
+                <Link className='hover:text-blue-900' to="/">Home</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link to="/works">Works</Link>
+                <Link className='hover:text-blue-900' to="/works">Works</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link to="/aboutus">About</Link>
+                <Link className='hover:text-blue-900' to="/aboutus">About</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link to="/contact">Contact</Link>
+                <Link className='hover:text-blue-900' to="/contact">Contact</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link to="/career">Career</Link>
+                <Link className='hover:text-blue-900' to="/career">Career</Link>
             </li>
         </>
 
@@ -71,7 +71,7 @@ const Header = () => {
                         </div></Link>
 
                     {/* Menu Items for Desktop */}
-                    <ul className="hidden md:flex space-x-6 font-semibold text-black hover:text-blue-900">
+                    <ul className="hidden md:flex space-x-6 font-semibold text-black ">
                         {links}
                     </ul>
 

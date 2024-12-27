@@ -14,7 +14,8 @@ import Works from './Component/Works/Works';
 import AboutUs from './Component/AboutUs/AboutUs';
 import Contact from './Component/Contact/Contact';
 import Career from './Component/Career/Career';
-import DemoTelwind from './Component/DemoTelwind/DemoTelwind';
+import WorkCardDetails from './Component/WorkCardDetails/WorkCardDetails';
+
 
 
 const router = createBrowserRouter([
@@ -44,9 +45,10 @@ const router = createBrowserRouter([
         element: <Career></Career>
       },
       {
-        path: '/telwindcss',
-        element: <DemoTelwind></DemoTelwind>
+        path: '/workcarddetails',
+        element: <WorkCardDetails></WorkCardDetails>
       }
+
 
     ]
   },

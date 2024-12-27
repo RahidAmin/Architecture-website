@@ -1,9 +1,15 @@
 import React from 'react';
 import img1 from '../Images/1.jpg';
+import { Link, useNavigate } from 'react-router-dom';
 // import img2 from '../Images/2.jpg';
 
 const WorksCard = () => {
 
+    const navigate = useNavigate();
+    const handleViewMore = () => {
+        navigate('/workcarddetails');
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div>
@@ -18,7 +24,10 @@ const WorksCard = () => {
                 <div className="card-body">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, aliquam!</p>
                     <div className="card-actions justify-end">
-                        <button className="btn bg-white border-hidden hover:bg-slate-300">View More</button>
+                        <button onClick={handleViewMore} className="btn bg-white border-hidden hover:bg-slate-300 text-black">
+                            View more
+                        </button>
+
                     </div>
                 </div>
             </div>
