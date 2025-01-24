@@ -15,6 +15,10 @@ import AboutUs from './Component/AboutUs/AboutUs';
 import Contact from './Component/Contact/Contact';
 import Career from './Component/Career/Career';
 import WorkCardDetails from './Component/WorkCardDetails/WorkCardDetails';
+import Login from './Component/Login/Login';
+import Admin from './Component/AdminPannel/Admin';
+import AuthProvider from './Component/Providers/AuthProvider';
+import PrivateRoute from './Component/Routes/PrivateRoute';
 
 
 
@@ -45,8 +49,18 @@ const router = createBrowserRouter([
         element: <Career></Career>
       },
       {
-        path: '/workcarddetails',
-        element: <WorkCardDetails></WorkCardDetails>
+        path: '/workcarddetails/:id',
+        element: <WorkCardDetails></WorkCardDetails>,
+        loader: ({ params }) => fetch(`https://artchitecture-website-server.onrender.com/works/${params.id}`)
+
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/admin',
+        element: <PrivateRoute><Admin></Admin></PrivateRoute>
       }
 
 
@@ -56,6 +70,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+    <AuthProvider><RouterProvider router={router} /></AuthProvider>
+  </StrictMode>
 )

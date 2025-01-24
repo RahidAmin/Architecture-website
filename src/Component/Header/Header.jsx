@@ -1,47 +1,42 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Header.css'
 
 import logo from '../Images/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { AuthContext } from '../Providers/AuthProvider';
 
 // import logo1 from '../Images/Logo1.png';
 
 const Header = () => {
 
-
+    const { user, logOut } = useContext(AuthContext);
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location])
     const links =
         <>
+
             <li onClick={() => setIsOpen(false)}>
-                <Link className='hover:text-blue-900' to="/">Home</Link>
+                <Link className={`hover:text-blue-900 ${location.pathname === '/' ? 'text-blue-900' : ''}`} to="/">Home</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link className='hover:text-blue-900' to="/works">Works</Link>
+                <Link className={`hover:text-blue-900 ${location.pathname === '/works' ? 'text-blue-900' : ''}`} to="/works">Works</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link className='hover:text-blue-900' to="/aboutus">About</Link>
+                <Link className={`hover:text-blue-900 ${location.pathname === '/aboutus' ? 'text-blue-900' : ''}`} to="/aboutus">About</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link className='hover:text-blue-900' to="/contact">Contact</Link>
+                <Link className={`hover:text-blue-900 ${location.pathname === '/contact' ? 'text-blue-900' : ''}`} to="/contact">Contact</Link>
             </li>
             <li onClick={() => setIsOpen(false)}>
-                <Link className='hover:text-blue-900' to="/career">Career</Link>
+                <Link className={`hover:text-blue-900 ${location.pathname === '/career' ? 'text-blue-900' : ''}`} to="/career">Career</Link>
             </li>
+
         </>
-
-
-    // const links = <>
-    //     <li><Link to='/'>Home</Link></li>
-    //     <li><Link to='/works'>Works</Link></li>
-    //     <li><Link to='/aboutus'>About</Link></li>
-
-    //     <li><Link to='/contact'>Contact</Link></li>
-    //     <li><Link to='/career'>Career</Link></li>
-
-
-
-    // </>
 
 
     return (
