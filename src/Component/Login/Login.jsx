@@ -10,10 +10,10 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password)
-        signIn(email, password).then((result) => {
-            console.log(result.user);
-            e.target.reset();
+
+        signIn(email, password).then(() => {
+
+            // e.target.reset();
             navigate('/admin');
         }).catch(error => {
             console.error(error.message);

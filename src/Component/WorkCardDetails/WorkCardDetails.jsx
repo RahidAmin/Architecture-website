@@ -4,7 +4,7 @@ const WorkCardDetails = () => {
     const works = useLoaderData();
     const { topImage, year, location, creativeDirector, visualization, aboutDescription, aboutImage, designDescription, designImage, img1, img2, img3, img4, img5, img6, img7, img8 } = works;
     return (
-        <div className='min-h-screen pt-10 bg-white text-black'>
+        <div className='pt-10 bg-white text-black mx-1'>
 
             {/* hero Section */}
             <div className='w-full h-auto justify-items-center'>
@@ -53,14 +53,15 @@ const WorkCardDetails = () => {
 
             <div className='mt-20 grid grid-cols-1 justify-center md:grid-cols-2 w-full md:gap-1 md:mx-1 lg:gap-4 lg:mx-4'>
 
-                <img className='' src={img1} alt="" />
-                <img className='' src={img2} alt="" />
-                <img className='' src={img3} alt="" />
-                <img className='' src={img4} alt="" />
-                <img className='' src={img5} alt="" />
-                <img className='' src={img6} alt="" />
-                <img className='' src={img7} alt="" />
-                <img className='' src={img8} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img1} alt="" />
+
+                <img className='md:h-[600px] w-full object-cover' src={img2} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img3} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img4} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img5} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img6} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img7} alt="" />
+                <img className='md:h-[600px] w-full object-cover' src={img8} alt="" />
 
             </div>
 

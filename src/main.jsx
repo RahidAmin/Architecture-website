@@ -19,6 +19,12 @@ import Login from './Component/Login/Login';
 import Admin from './Component/AdminPannel/Admin';
 import AuthProvider from './Component/Providers/AuthProvider';
 import PrivateRoute from './Component/Routes/PrivateRoute';
+import UpdateWorks from './Component/Update/UpdateWorks';
+import UpdateAbout from './Component/Update/UpdateAbout';
+import UpdateWorksEdit from './Component/Update/UpdateWorksEdit';
+import AddNewWork from './Component/AddNewWork/AddNewWork';
+import UpdateAboutMember from './Component/Update/UpdateAboutMember';
+import AddNewMember from './Component/AddNewMember/AddNewMember';
 
 
 
@@ -51,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: '/workcarddetails/:id',
         element: <WorkCardDetails></WorkCardDetails>,
-        loader: ({ params }) => fetch(`https://artchitecture-website-server.onrender.com/works/${params.id}`)
+        loader: ({ params }) => fetch(`http://localhost:5000/works/${params.id}`)
 
       },
       {
@@ -61,7 +67,35 @@ const router = createBrowserRouter([
       {
         path: '/admin',
         element: <PrivateRoute><Admin></Admin></PrivateRoute>
+      },
+      {
+        path: '/updateWorks',
+        element: <PrivateRoute><UpdateWorks></UpdateWorks></PrivateRoute>
+      },
+      {
+        path: '/updateAbout',
+        element: <PrivateRoute><UpdateAbout></UpdateAbout></PrivateRoute>
+      },
+      {
+        path: '/updateWorksEdit/:id',
+        element: <PrivateRoute><UpdateWorksEdit></UpdateWorksEdit></PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/works/${params.id}`)
+
+      },
+      {
+        path: '/addNewWork',
+        element: <PrivateRoute><AddNewWork></AddNewWork></PrivateRoute>
+      },
+      {
+        path: '/updateAboutMember/:id',
+        element: <PrivateRoute><UpdateAboutMember></UpdateAboutMember></PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/members/${params.id}`)
+      },
+      {
+        path: '/addNewMember',
+        element: <PrivateRoute><AddNewMember></AddNewMember></PrivateRoute>
       }
+
 
 
     ]

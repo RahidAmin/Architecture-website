@@ -1,30 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 
 const AboutUs = () => {
-    const teamMembers = [
-        {
-            name: "Alice Johnson",
-            designation: "CEO & Founder",
-            image: "https://i.ibb.co.com/t4f0T72/4.png",
-        },
-        {
-            name: "Michael Smith",
-            designation: "Head of Operations",
-            image: "https://i.ibb.co.com/JHJcfBX/3.png",
-        },
-        {
-            name: "Sophia Brown",
-            designation: "Lead Barista",
-            image: "https://i.ibb.co.com/bFZsTMQ/2.png",
-        },
-        {
-            name: "James Wilson",
-            designation: "Marketing Manager",
-            image: "https://i.ibb.co.com/6rWxYZP/1.png",
-        },
-    ];
+    const [teamMembers, setTeamMembers] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/members').then(res => res.json()).then(data => {
+            setTeamMembers(data);
+        }
+        )
+    }, [])
     return (
         <div className="flex flex-col items-center bg-gray-50 text-gray-800">
             {/* Hero Section */}
@@ -62,7 +47,7 @@ const AboutUs = () => {
                             <img
                                 src={member.image}
                                 alt={member.name}
-                                className="w-24 h-24 rounded-full mb-4 border-4 border-gray-200"
+                                className="w-36 h-36 rounded-full mb-4 border-4 border-gray-200"
                             />
                             <h3 className="text-xl font-semibold">{member.name}</h3>
                             <p className="text-gray-500">{member.designation}</p>
