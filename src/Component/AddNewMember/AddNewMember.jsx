@@ -10,7 +10,7 @@ const AddNewMember = () => {
 
         const updateMember = { name, designation, image };
 
-        fetch('http://localhost:5000/members', {
+        fetch('https://artchitecture-website-server.onrender.com/members', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

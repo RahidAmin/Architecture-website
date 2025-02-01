@@ -9,6 +9,11 @@ import { AuthContext } from '../Providers/AuthProvider';
 
 const Header = () => {
 
+
+
+
+
+
     const { user, logOut } = useContext(AuthContext);
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
@@ -58,7 +63,7 @@ const Header = () => {
                             Simple Symmetry
                         </span> */}
                             <div className=''>
-                                <span className="ml-2 text-xl font-bold text-black ">
+                                <span className="ml-2 text-sm md:text-xl font-bold text-black ">
                                     Simple Symmetry
                                 </span>
 
@@ -103,7 +108,7 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <ul className="md:hidden bg-white shadow-md text-gray-600 pl-3">
+                    <ul className="md:hidden font-semibold bg-white shadow-md text-gray-600 pl-5 absolute right-4 w-48">
                         {links}
                     </ul>
                 )}
@@ -111,57 +116,6 @@ const Header = () => {
 
 
 
-            {/* 
-            <div className="navbar bg-slate-300">
-
-                <div className="navbar-start">
-
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost text-black lg:hidden">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[999] mt-3 w-52 p-2 shadow font-semibold">
-                            {links}
-
-
-                        </ul>
-                    </div>
-
-                    <div className="navbar-center flex justify-center w-full lg:hidden">
-                        <img className='h-16 w-20' src={logo} alt="" />
-                    </div>
-
-                </div>
-
-                <div className="navbar-start hidden absolute lg:flex">
-                    <img className='h-20 w-auto lg:h-20 lg:w-auto"' src={logo} alt="" />
-                </div>
-                <div className="navbar-center hidden lg:flex items-center">
-
-                    <ul className="menu menu-horizontal px-1 font-semibold">
-
-                        {links}
-                    </ul>
-                </div>
-                <div className="navbar-end">
-
-                </div>
-
-            </div> */}
         </div>
 
 

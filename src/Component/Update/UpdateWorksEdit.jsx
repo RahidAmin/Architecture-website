@@ -31,7 +31,7 @@ const UpdateWorksEdit = () => {
 
         const updateWork = { name, projectType, topimage, yeaR, locatioN, creativedirector, visualizatioN, aboutimage, designdescription, designimage, aboutdescription, img11, img22, img33, img44, img55, img66, img77, img88 }
 
-        fetch(`http://localhost:5000/works/${_id}`, {
+        fetch(`https://artchitecture-website-server.onrender.com/works/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

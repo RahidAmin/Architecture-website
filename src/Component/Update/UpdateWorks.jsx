@@ -5,7 +5,7 @@ import UpdateWorksRow from './UpdateWorksRow';
 
 const UpdateWorks = () => {
     const [works, setWorks] = useState([]);
-    const url = 'http://localhost:5000/works';
+    const url = 'https://artchitecture-website-server.onrender.com/works';
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(url).then(res => res.json());
@@ -19,7 +19,7 @@ const UpdateWorks = () => {
     const handleDelete = (id) => {
         const proceed = confirm('Are you sure,you want to delete');
         if (proceed) {
-            fetch(`http://localhost:5000/works/${id}`, {
+            fetch(`https://artchitecture-website-server.onrender.com/works/${id}`, {
                 method: 'DELETE'
             }).then(res => res.json()).then((data) => {
 

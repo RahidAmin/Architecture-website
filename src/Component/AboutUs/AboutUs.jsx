@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const AboutUs = () => {
     const [teamMembers, setTeamMembers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/members').then(res => res.json()).then(data => {
+        fetch('https://artchitecture-website-server.onrender.com/members').then(res => res.json()).then(data => {
             setTeamMembers(data);
         }
         )
