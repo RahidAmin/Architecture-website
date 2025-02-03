@@ -5,7 +5,7 @@ const UpdateWorksRow = ({ work, handleDelete }) => {
     const { _id, type, pName, topImage, year, location, visualization } = work;
     return (
 
-        <tr>
+        <tr className='text-black'>
             <th>
                 <button onClick={() => handleDelete(_id)} className="btn btn-circle">
                     <svg

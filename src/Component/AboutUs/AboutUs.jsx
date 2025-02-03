@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
     const [teamMembers, setTeamMembers] = useState([]);
@@ -10,8 +11,15 @@ const AboutUs = () => {
         }
         )
     }, [])
+
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Initialize AOS with animation duration
+    }, []);
+
+
     return (
-        <div className="flex flex-col items-center bg-gray-50 text-gray-800">
+        <div className="min-h-screen flex flex-col items-center bg-gray-50 text-gray-800 overflow-hidden">
             {/* Hero Section */}
             <section className="w-full bg-gray-100 py-16 text-center">
                 <h1 className="text-4xl font-bold mb-4">About Us</h1>
@@ -20,13 +28,14 @@ const AboutUs = () => {
 
             {/* About Content Section */}
             <section className="w-full max-w-6xl px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
+                <div data-aos="fade-right">
                     <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
+
                     <p className="text-gray-600 leading-relaxed">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa exercitationem consequatur at ipsum voluptatum illum!
                     </p>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center" data-aos="fade-left">
                     <img
                         src="https://i.ibb.co.com/TLFZLYD/unnamed.jpg"
                         alt="About us"
@@ -43,6 +52,7 @@ const AboutUs = () => {
                         <div
                             key={index}
                             className="flex flex-col items-center bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow"
+                            data-aos="zoom-in-up"
                         >
                             <img
                                 src={member.image}

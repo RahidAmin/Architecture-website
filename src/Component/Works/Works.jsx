@@ -3,7 +3,7 @@ import FeaturedProjects from '../FeaturedProjects/FeaturedProjects';
 
 const Works = () => {
     return (
-        <div>
+        <div className='min-h-screen'>
             <FeaturedProjects></FeaturedProjects>
         </div>
     );

@@ -34,7 +34,7 @@ const AddNewMember = () => {
     }
 
     return (
-        <div className='mt-12 pb-12 '>
+        <div className='mt-12 pb-12 text-black '>
             <h1 className='text-center'>Add New Member</h1>
             <form onSubmit={handleAdd}>
                 <div className='px-10'>

@@ -34,7 +34,7 @@ const UpdateAbout = () => {
     }
 
     return (
-        <div>
+        <div className="text-black">
             {
                 members.map((member, index) =>
                     <div key={index} className="mt-12 md:text-sm md:w-1/2 h-16 border border-blue-600 rounded-lg flex justify-between">

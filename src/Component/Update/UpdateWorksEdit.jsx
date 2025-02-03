@@ -54,7 +54,7 @@ const UpdateWorksEdit = () => {
 
     }
     return (
-        <div className='m-12'>
+        <div className='m-12 text-black'>
             <h1 className='text-center'>Update Work</h1>
             <form onSubmit={handleUpdate}>
                 <div className='md:flex mb-8'>

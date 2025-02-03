@@ -9,7 +9,7 @@ const Admin = () => {
     }
     return (
 
-        <div className="my-12 mx-5 bg-base-200 min-h-screen">
+        <div className="my-12 mx-5 bg-base-200 min-h-screen ">
             <div className='mb-2 h-12 bg-red-50 text-center font-bold text-lg border border-red-500 roonded rounded-lg'><p className='mt-2'>Admin Pannel</p></div>
 
             <div className='mb-2 h-[200px] flex flex-wrap flex-col items-center bg-red-50 border border-red-500 rounded-xl w-1/2 md:w-1/4'>

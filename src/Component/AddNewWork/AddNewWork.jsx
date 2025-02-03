@@ -50,7 +50,7 @@ const AddNewWork = () => {
 
 
     return (
-        <div className='m-12'>
+        <div className='m-12 text-black'>
             <h1 className='text-center'>Update Work</h1>
             <form onSubmit={handleAdd}>
                 <div className='md:flex mb-8'>

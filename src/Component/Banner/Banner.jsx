@@ -25,13 +25,13 @@ const Banner = () => {
 
 
 
-            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[700px] xl:h-[800px] overflow-hidden bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500">
+            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500">
                 {/* Animated Background Image */}
                 <div className="absolute inset-0 animate-slide ">
                     <img
                         src={img1}
                         alt="Banner"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover md:object-fill"
                     />
                 </div>
             </div>

@@ -39,7 +39,7 @@ const UpdateWorks = () => {
 
 
     return (
-        <div>
+        <div className='text-black'>
             <h1 className='m-20 bg-red-500'>Update page</h1>
             <div className="overflow-x-auto">
                 <table className="table">

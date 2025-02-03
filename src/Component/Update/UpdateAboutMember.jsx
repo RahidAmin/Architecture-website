@@ -37,7 +37,7 @@ const UpdateAboutMember = () => {
     }
 
     return (
-        <div className='mt-12 pb-12 '>
+        <div className='mt-12 pb-12 text-black'>
             <h1 className='text-center'>Update Member</h1>
             <form onSubmit={handleUpdate}>
                 <div className='px-10'>

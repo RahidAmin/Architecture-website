@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
     return (
 
-        <section className="bg-gradient-to-b from-blue-50 to-gray-100 text-gray-800 py-12">
+        <section className="min-h-screen bg-gradient-to-b from-blue-50 to-gray-100 text-gray-800 py-12">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-extrabold text-center text-black-700 mb-8">Contact Us</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -15,7 +15,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <h3 className="text-xl font-semibold">Address</h3>
-                            <p className="text-gray-600">Bashundhara, Dhaka, Bangladesh</p>
+                            <p className="text-gray-600">Flat-1/A,House: Ka-210,Kuril Chowrasta Vatara,Dhaka-1229</p>
                         </div>
                     </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                     <div className="aspect-w-16 aspect-h-9 flex justify-center items-center">
                         <iframe
                             className="rounded-xl shadow-lg w-full md:h-auto lg:h-80 xl:h-96"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.84330979493!2d90.43067557516599!3d23.824170278620173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79b5b3956cd%3A0x5cda286bbe6307be!2sBaitul%20Jannat%20Jame%20Masjid(mosque)%2C%20Road%2015%2C%20G%20Block%2C%20Bashundhara%20R%2FA!5e0!3m2!1sen!2sbd!4v1734885387648!5m2!1sen!2sbd"
+                            src="https://www.google.com/maps?q=Kuril+Chowrasta+Vatara+Dhaka+1229&output=embed"
 
                             loading="lazy"
                         ></iframe>

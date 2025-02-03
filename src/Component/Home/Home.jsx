@@ -4,7 +4,7 @@ import FeaturedProjects from '../FeaturedProjects/FeaturedProjects';
 
 const Home = () => {
     return (
-        <div>
+        <div className='min-h-screen'>
 
             <Banner></Banner>
             <FeaturedProjects></FeaturedProjects>

@@ -25,9 +25,17 @@ const FeaturedProjects = () => {
         fetchWorks();
     }, [filterType])
     return (
+
+
+
+
+
         <div >
             <div className='w-full py-20 justify-center text-black'>
+
                 <h1 className='text-center text-2xl font-semibold'>Featured  Projects</h1>
+
+
                 <div className='text-center space-x-3 py-4 font-semibold px-5'>
 
                     <button
