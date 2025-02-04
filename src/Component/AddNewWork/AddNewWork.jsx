@@ -26,7 +26,7 @@ const AddNewWork = () => {
 
         const updateWork = { pName, type, topImage, year, location, creativeDirector, visualization, aboutImage, designDescription, designImage, aboutDescription, img1, img2, img3, img4, img5, img6, img7, img8 }
 
-        fetch('https://artchitecture-website-server.onrender.com/works', {
+        fetch('https://api.simplesymmetry-bd.com/works', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -10,10 +10,10 @@ const FeaturedProjects = () => {
 
 
     useEffect(() => {
-        // fetch('https://artchitecture-website-server.onrender.com/works').then(res => res.json()).then(data => setWorksType(data));
+        // fetch('https://api.simplesymmetry-bd.com/works').then(res => res.json()).then(data => setWorksType(data));
         const fetchWorks = async () => {
             try {
-                const url = filterType === 'all' ? 'https://artchitecture-website-server.onrender.com/works' : `https://artchitecture-website-server.onrender.com/works?type=${filterType}`;
+                const url = filterType === 'all' ? 'https://api.simplesymmetry-bd.com/works' : `https://api.simplesymmetry-bd.com/works?type=${filterType}`;
 
                 const response = await fetch(url);
                 const data = await response.json();

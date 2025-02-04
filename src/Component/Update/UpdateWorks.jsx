@@ -5,7 +5,7 @@ import UpdateWorksRow from './UpdateWorksRow';
 
 const UpdateWorks = () => {
     const [works, setWorks] = useState([]);
-    const url = 'https://artchitecture-website-server.onrender.com/works';
+    const url = 'https://api.simplesymmetry-bd.com/works';
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(url).then(res => res.json());
@@ -19,7 +19,7 @@ const UpdateWorks = () => {
     const handleDelete = (id) => {
         const proceed = confirm('Are you sure,you want to delete');
         if (proceed) {
-            fetch(`https://artchitecture-website-server.onrender.com/works/${id}`, {
+            fetch(`https://api.simplesymmetry-bd.com/works/${id}`, {
                 method: 'DELETE'
             }).then(res => res.json()).then((data) => {
 

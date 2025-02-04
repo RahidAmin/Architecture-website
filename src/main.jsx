@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: '/workcarddetails/:id',
         element: <WorkCardDetails></WorkCardDetails>,
-        loader: ({ params }) => fetch(`https://artchitecture-website-server.onrender.com/works/${params.id}`)
+        loader: ({ params }) => fetch(`https://api.simplesymmetry-bd.com/works/${params.id}`)
 
       },
       {
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
       {
         path: '/updateWorksEdit/:id',
         element: <PrivateRoute><UpdateWorksEdit></UpdateWorksEdit></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://artchitecture-website-server.onrender.com/works/${params.id}`)
+        loader: ({ params }) => fetch(`https://api.simplesymmetry-bd.com/works/${params.id}`)
 
       },
       {
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
       {
         path: '/updateAboutMember/:id',
         element: <PrivateRoute><UpdateAboutMember></UpdateAboutMember></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://artchitecture-website-server.onrender.com/members/${params.id}`)
+        loader: ({ params }) => fetch(`https://api.simplesymmetry-bd.com/members/${params.id}`)
       },
       {
         path: '/addNewMember',

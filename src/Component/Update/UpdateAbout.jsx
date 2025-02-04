@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const UpdateAbout = () => {
     const [members, setMembers] = useState([]);
     useEffect(() => {
-        fetch('https://artchitecture-website-server.onrender.com/members').then(res => res.json()).then(data => {
+        fetch('https://api.simplesymmetry-bd.com/members').then(res => res.json()).then(data => {
             setMembers(data);
         }
         )
@@ -14,7 +14,7 @@ const UpdateAbout = () => {
     const handleDelete = (id) => {
         const proceed = confirm('Are You sure,you want to delete')
         if (proceed) {
-            fetch(`https://artchitecture-website-server.onrender.com/members/${id}`, {
+            fetch(`https://api.simplesymmetry-bd.com/members/${id}`, {
                 method: 'DELETE'
             }).then(res => {
                 return res.json();

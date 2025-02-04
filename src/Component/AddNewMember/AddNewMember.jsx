@@ -10,7 +10,7 @@ const AddNewMember = () => {
 
         const updateMember = { name, designation, image };
 
-        fetch('https://artchitecture-website-server.onrender.com/members', {
+        fetch('https://api.simplesymmetry-bd.com/members', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

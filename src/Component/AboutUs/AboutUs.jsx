@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const AboutUs = () => {
     const [teamMembers, setTeamMembers] = useState([]);
     useEffect(() => {
-        fetch('https://artchitecture-website-server.onrender.com/members').then(res => res.json()).then(data => {
+        fetch('https://api.simplesymmetry-bd.com/members').then(res => res.json()).then(data => {
             setTeamMembers(data);
         }
         )

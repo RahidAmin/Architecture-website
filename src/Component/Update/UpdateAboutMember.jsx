@@ -12,7 +12,7 @@ const UpdateAboutMember = () => {
         const image = e.target.image.value;
 
         const updateMember = { name, designation, image };
-        fetch(`https://artchitecture-website-server.onrender.com/members/${_id}`, {
+        fetch(`https://api.simplesymmetry-bd.com/members/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
