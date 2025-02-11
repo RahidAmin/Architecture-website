@@ -37,9 +37,9 @@ const Header = () => {
             <li onClick={() => setIsOpen(false)}>
                 <Link className={`hover:text-blue-900 ${location.pathname === '/contact' ? 'text-blue-900' : ''}`} to="/contact">Contact</Link>
             </li>
-            <li onClick={() => setIsOpen(false)}>
+            {/* <li onClick={() => setIsOpen(false)}>
                 <Link className={`hover:text-blue-900 ${location.pathname === '/career' ? 'text-blue-900' : ''}`} to="/career">Career</Link>
-            </li>
+            </li> */}
 
         </>
 

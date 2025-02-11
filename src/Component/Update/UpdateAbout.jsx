@@ -42,7 +42,7 @@ const UpdateAbout = () => {
                         <img className="h-full w-20 object-cover rounded-lg" src={member.image} alt="" />
                         <span className="mt-2"><p>Name</p> <p>{member.name}</p></span>
                         <span className="mt-2"><p>Designation</p><p>{member.designation}</p></span>
-                        <button className="btn btn-square mt-2"><Link to={`/updateAboutMember/${member._id}`}>Edit</Link></button>
+                        {/* <button className="btn btn-square mt-2"><Link to={`/updateAboutMember/${member._id}`}>Edit</Link></button> */}
                         <button onClick={() => handleDelete(member._id)} className="btn btn-square mr-2 mt-2">Delete</button>
                     </div>
                 )

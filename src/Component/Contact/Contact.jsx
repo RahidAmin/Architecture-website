@@ -42,37 +42,46 @@ const Contact = () => {
                     </div>
 
                     {/* Facebook Section */}
-                    <div className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <div className="text-3xl text-blue-600">
-                            <i className="fab fa-facebook"></i>
+                    <a href="https://facebook.com">
+                        <div className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div className="text-3xl text-blue-600">
+                                <i className="fab fa-facebook"></i>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-semibold">Facebook</h3>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 hover:underline">Visit Us</a>
+                            </div>
                         </div>
-                        <div>
-                            <h3 className="text-xl font-semibold">Facebook</h3>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 hover:underline">Visit Us</a>
-                        </div>
-                    </div>
+                    </a>
+
+
+
 
                     {/* Twitter Section */}
-                    <div className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <div className="text-3xl text-blue-400">
-                            <i className="fab fa-twitter"></i>
+                    <a href="https://twitter.com">
+                        <div className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div className="text-3xl text-blue-400">
+                                <i className="fab fa-twitter"></i>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-semibold">Twitter</h3>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 hover:underline">Follow Us</a>
+                            </div>
                         </div>
-                        <div>
-                            <h3 className="text-xl font-semibold">Twitter</h3>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 hover:underline">Follow Us</a>
-                        </div>
-                    </div>
+                    </a>
 
                     {/* YouTube Section */}
-                    <div className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <div className="text-3xl text-red-500">
-                            <i className="fab fa-youtube"></i>
+                    <a href="https://youtube.com">
+                        <div className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div className="text-3xl text-red-500">
+                                <i className="fab fa-youtube"></i>
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-semibold">YouTube</h3>
+                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-700 hover:underline">Subscribe</a>
+                            </div>
                         </div>
-                        <div>
-                            <h3 className="text-xl font-semibold">YouTube</h3>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-700 hover:underline">Subscribe</a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
 
                 {/* Map Section */}
