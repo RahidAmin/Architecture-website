@@ -1,4 +1,5 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 const Contact = () => {
@@ -91,8 +92,6 @@ const Contact = () => {
                         <iframe
                             className="rounded-xl shadow-lg w-full md:h-auto lg:h-80 xl:h-96"
                             src="https://www.google.com/maps?q=Kuril+Chowrasta+Vatara+Dhaka+1229&output=embed"
-
-                            loading="lazy"
                         ></iframe>
                     </div>
                 </div>

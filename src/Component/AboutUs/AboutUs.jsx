@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+
+
 const AboutUs = () => {
     const [teamMembers, setTeamMembers] = useState([]);
     useEffect(() => {
@@ -49,26 +52,28 @@ const AboutUs = () => {
                 <h2 className="text-2xl font-bold mb-8">Meet Our Team</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
                     {teamMembers.map((member, index) => (
-                        <div className='w-full h-auto flex flex-wrap justify-center' key={index} data-aos="zoom-in-up">
-                            <div className='w-46 flex flex-col items-center mb-12 relative group'>
-                                <img className='w-52 h-52 rounded-full' src={member.image} alt="" />
-                                <p className='text-base font-semibold pt-2'>{member.name}</p>
-                                <p className='text-sm font-semibold'>{member.designation}</p>
-                                {/* <p className='font-semibold'>{member.description}</p> */}
-                                {
-                                    member.description && (
-                                        <div className="absolute top-[-98px] left-0 right-0 bg-black bg-opacity-80 text-white text-sm font-semibold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2 rounded-t-lg">
-                                            {member.description}
-                                        </div>
-                                    )
-                                }
 
-                            </div>
+                        <div data-aos="fade-up" key={member.id || index} className='w-46 flex flex-col items-center mb-12 relative group'>
+                            <img className='w-52 h-52 rounded-full' src={member.image} alt="" />
+                            <p className='text-base font-semibold pt-2'>{member.name}</p>
+                            <p className='text-sm font-semibold'>{member.designation}</p>
+                            {/* <p className='font-semibold'>{member.description}</p> */}
+                            {
+
+                                member.description && (
+                                    <div className="absolute top-[-70px] md:top-[-90px] left-0 right-0 bg-black bg-opacity-80 text-white text-sm font-semibold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2 rounded-t-lg">
+                                        {member.description}
+                                    </div>
+                                )
+                            }
+
                         </div>
+
 
                     ))}
                 </div>
             </div>
+
         </div>
     );
 };

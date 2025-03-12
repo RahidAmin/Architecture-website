@@ -38,21 +38,22 @@ const AddNewMember = () => {
 
 
     return (
-        <div className='mt-12 pb-12 text-black bg-white'>
+        <div className='mt-12 pb-12 text-black'>
             <h1 className='text-center'>Add New Member</h1>
             <form onSubmit={handleAdd}>
                 <div className='px-10'>
                     <div>
-                        <label className='label'> <span className='label-text'>Image:</span></label>
+                        <label className='label'> <span className='label-text text-black'>Image:</span></label>
                         <input className='h-10 w-1/2 border border-blue-500' type='file' name="image" id="" />
                     </div>
                     <div>
-                        <label className='label'><span className='label-text'>Name:</span></label>
-                        <input type="text" className='h-10 w-1/2 border border-blue-500' name="name" id="" />
-                        <label className='label'><span className='label-text'>Designation</span></label>
-                        <input type="text" className='h-10 w-1/2 border border-blue-500' name="designation" id="" />
-                        <label className='label'><span className='label-text'>Description</span></label>
-                        <input type="text" className='h-10 w-1/2 border border-blue-500' name="description" id="" />
+                        <label className='label'><span className='label-text text-black'>Name:</span></label>
+                        <input type="text" className='h-10 w-1/2 border border-blue-500 bg-white' name="name" id="" />
+                        <label className='label'><span className='label-text text-black'>Designation</span></label>
+                        <input type="text" className='h-10 w-1/2 border border-blue-500 bg-white' name="designation" id="" />
+                        <label className='label'><span className='label-text bg-white text-black'>Description</span></label>
+
+                        <textarea name="description" className="input input-bordered w-full h-36 bg-white"></textarea>
                     </div>
                     <button className='btn btn-accent flex w-56 mt-5 '>Add</button>
                 </div>

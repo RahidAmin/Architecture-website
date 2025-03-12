@@ -78,13 +78,13 @@ const UpdateWorksEdit = () => {
                                 <option value="commercial">Commercial</option>
                             </select>
                         </label>
-                        <label className="label">
+                        {/* <label className="label">
                             <span className="label-text">Top Image</span>
                         </label>
                         <label className="input-group">
 
                             <input type="text" name='topImage' defaultValue={topImage} className="input input-bordered w-full" />
-                        </label>
+                        </label> */}
                         <label className="label">
                             <span className="label-text">Year</span>
                         </label>
@@ -116,33 +116,33 @@ const UpdateWorksEdit = () => {
                             <input type="text" name='creativeDirector' defaultValue={creativeDirector} className="input input-bordered w-full" />
                         </label>
 
-                        <label className="label">
+                        {/* <label className="label">
                             <span className="label-text">About Image</span>
                         </label>
                         <label className="input-group">
 
                             <input type="text" name='aboutImage' defaultValue={aboutImage} className="input input-bordered w-full" />
-                        </label>
+                        </label> */}
                         <label className="label">
                             <span className="label-text">About Description</span>
                         </label>
                         <label className="input-group">
                             <textarea name="aboutDescription" defaultValue={aboutDescription} className="input input-bordered w-full h-36"></textarea>
                         </label>
-                        <label className="label">
+                        {/* <label className="label">
                             <span className="label-text">Design Image</span>
-                        </label>
-                        <label className="input-group">
+                        </label> */}
+                        {/* <label className="input-group">
 
                             <input type="text" name='designImage' defaultValue={designImage} className="input input-bordered w-full" />
-                        </label>
+                        </label> */}
                         <label className="label">
                             <span className="label-text">Design Description</span>
                         </label>
                         <label className="input-group">
                             <textarea name="designDescription" defaultValue={designDescription} className="input input-bordered w-full h-36"></textarea>
                         </label>
-                        <label className="label">
+                        {/* <label className="label">
                             <span className="label-text">Image 1</span>
                         </label>
                         <label className="input-group">
@@ -197,7 +197,7 @@ const UpdateWorksEdit = () => {
                         <label className="input-group">
 
                             <input type="text" name='img8' defaultValue={img8} className="input input-bordered w-full" />
-                        </label>
+                        </label> */}
                     </div>
 
                 </div>

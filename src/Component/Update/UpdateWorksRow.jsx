@@ -43,9 +43,9 @@ const UpdateWorksRow = ({ work, handleDelete }) => {
                 <span className="badge badge-ghost badge-sm">{year}</span>
             </td>
             <td>{visualization}</td>
-            {/* <th>
+            <th>
                 <button className="btn btn-ghost btn-xs"><Link to={`/updateWorksEdit/${_id}`}>Edit</Link></button>
-            </th> */}
+            </th>
         </tr>
 
     );

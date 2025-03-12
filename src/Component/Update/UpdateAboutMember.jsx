@@ -42,8 +42,8 @@ const UpdateAboutMember = () => {
             <form onSubmit={handleUpdate}>
                 <div className='px-10'>
                     <div><img src={image} alt="" />
-                        <label className='label'> <span className='label-text'>Image:</span></label>
-                        <input defaultValue={image} className='h-10 w-1/2 border border-blue-500' type="text" name="image" id="" />
+                        {/* <label className='label'> <span className='label-text'>Image:</span></label>
+                        <input defaultValue={image} className='h-10 w-1/2 border border-blue-500' type="text" name="image" id="" /> */}
                     </div>
                     <div>
                         <label className='label'><span className='label-text'>Name:</span></label>
